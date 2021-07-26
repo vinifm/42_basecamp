@@ -2,7 +2,7 @@ obs.: not approved by mouli :(
 
 forgot to lowcase remaining letters.
 
-email message: 
+email message:
 
 = ex09 =========================================================================
 $> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcapitalize.c | grep -E '^(Error|Warning)'
