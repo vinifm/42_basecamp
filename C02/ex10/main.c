@@ -6,13 +6,12 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 
 int	main(void)
 {
-	char	dest[17];
-	char	dest0[17];
-	char src[17] = "hello";
-	int	n = 2;
+	char	dest[5];
+	char	dest0[5];
+	char src[] = "abcdefg";
 
-	printf("%d, %s\n", ft_strlcpy(dest, src, n), dest);
-	printf("%lu, %s\n", strlcpy(dest0, src, n), dest0);
+	printf("%d, %s\n", ft_strlcpy(dest, src, 0), dest);
+	printf("%lu, %s\n", strlcpy(dest0, src, 0), dest0);
 
 	return(0);
 }
