@@ -8,7 +8,7 @@ int	main(void)
 	unsigned int	n;
 
 	n = 3;
-	printf("%d ", strncmp("0-12", "013", n));
+	printf("%d ", strncmp("012", "013", n));
 	printf("%d\n", strncmp("015", "014", n));
 	
 	printf("%d ", ft_strncmp("012", "013", n));

@@ -6,14 +6,14 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
 
 int	main(void)
 {
-	char	dest1[] = "toto  ";
-	char	src1[] = "toto  ";
+	char	dest1[8] = "toto";
+	char	src1[] = "012";
 
-	char	dest[] = "toto  ";
-	char	src[] = "toto  ";
+	char	dest[8] = "toto";
+	char	src[] = "012";
 
-	printf("%s, %lu\n", dest1, strlcat(dest1, src1, 0));
-	printf("%s, %d\n", dest, ft_strlcat(dest, src, 0));
+	printf("%s, %lu\n", dest1, strlcat(dest1, src1, 2));
+	printf("%s, %d\n", dest, ft_strlcat(dest, src, 2));
 	return (0);
 }
 
